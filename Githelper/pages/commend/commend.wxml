@@ -1,0 +1,50 @@
+<!--page/commend/commend.wxml-->
+<view class="title">
+    <text>每日推荐</text>
+</view>
+
+<view >
+
+    <!-- gitee内容 -->
+    <image src="/image/public/gitee.png" class="type-icon"></image>
+    <view class="menu" wx:for-items="{{gitee_itemsData}}" wx:for-item="item" wx:key="key">
+        <view class="item" bindtap="aaa"  data-url="{{item.url}}">
+            <view class="item-title">
+                <text>{{item.title}}</text>
+            </view>
+            <view class="item-content">
+                <text>{{item.content}}</text>
+            </view>
+            <view class="item-bottom">
+                <view class="item-language">
+                    <text style="padding:5rpx 15rpx 5rpx 15rpx;">{{item.language}}</text>
+                </view>
+                <view class="item-star">
+                    <text>{{item.star}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- github内容 -->
+    <image src="/image/public/github.png"  class="type-icon"></image>
+    <view class="menu"  wx:for-items="{{github_itemsData}}" wx:for-item="item" wx:key="key">
+        <view class="item">
+            <view class="item-title">
+                <text>{{item.title}}</text>
+            </view>
+            <view class="item-content">
+                <text>{{item.content}}</text>
+            </view>
+            <view class="item-bottom">
+                <view class="item-language">
+                    <text style="padding:5rpx 15rpx 5rpx 15rpx;">{{item.language}}</text>
+                </view>
+                <view class="item-star">
+                    <text>{{item.star}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

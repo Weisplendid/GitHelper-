@@ -1,0 +1,50 @@
+<!--pages/search/search_list/list.wxml-->
+<view >
+  <!-- 搜索栏 -->
+  <view class="searchBar">
+<button class="tapbtn1" plain="true" bindtap="skyOnclick">
+  <image src="{{nowIMGPath}}" id="searchBar_ico"></image>
+</button>
+  <view class="weui-search-bar__box">
+    <icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+    <input type="text" size='20' id="searchBar_input" placeholder="    请输入关键字" bindconfirm="inputSearch"></input>
+  </view>
+  <view bindtap="callGiteeApi">搜索</view>
+  </view>
+
+  <!-- 搜索结果数及横线 -->
+  <view class="result_head">
+    <text>搜索到相关库约 {{total_count}} 个</text>
+  </view>
+  <!-- 搜索列表内容 -->
+  <view class="menu" wx:for-items="{{itemsData}}" wx:for-item="item" wx:key="key">
+    <!-- 单个框 -->
+    <view class="item" data-url="111" bindtap="showH">
+      <!-- 单个框顶部 -->
+      <view class="item-head">
+        <view><text style="color: #2440b3;">{{item.title}}</text></view>
+        <view wx:if="{{item.ifGitHub}}">
+          <view><text>Github</text></view>
+        </view>
+        <view wx:else>
+          <view><text style="color: #f73131;">Gitee</text></view>
+        </view>
+      </view>
+      <!-- 单个框内容 -->
+      <view class="item-content">
+        <text wx:for="{{item.content}}" wx:key="key" wx:for-item="item_" class="{{item_ == keyword ? 'searchHigh' : '' }}">{{item_}}</text>
+      </view>
+      <!-- 单个框底部 -->
+      <view class="item-bottom">
+        <view>
+          <text class="item-language" style="padding:5rpx 15rpx 5rpx 15rpx;">{{item.language}}</text>
+          <text style="padding:5rpx 15rpx 5rpx 15rpx;">{{item.star}}</text>
+        </view>
+        <view>
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
