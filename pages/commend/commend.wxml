@@ -1,0 +1,51 @@
+<!--page/commend/commend.wxml-->
+<text class = 'title'>每日推荐</text>
+
+<view class="menu">
+    <image src="/image/public/gitee.png"></image>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png" bindtap="giteeBt" class="giteebar"></image>
+        <text>热门项目</text>
+        <!-- <button class="giteeBt"></button> -->
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+</view>
+
+<view class="menu">
+    <image src="/image/public/github.png"></image>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+    <view class="item">
+        <image src="/image/public/GitHelper_ico.png"></image>
+        <text>热门项目</text>
+    </view>
+</view>
