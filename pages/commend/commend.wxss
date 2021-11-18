@@ -1,5 +1,0 @@
-/* page/commend/commend.wxss */
-
-.title{
-    color: red;
-}
