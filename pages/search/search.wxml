@@ -1,0 +1,28 @@
+<!--page/search/search.wxml-->
+<view>
+    <view id="title">
+    <text class="tit">    GitHelper </text>
+    <text class="le"> 搜索聚合</text>
+    </view>
+
+ 
+
+    <view id="search">
+        <button class="tapbtn1" plain="true" bindtap="skyOnclick">
+            <image src="{{nowIMGPath}}" id="searchBar_ico"></image>
+        </button>
+        <input id="search-input" placeholder=" 搜你所想 ✧(ФwФ)" bindconfirm="goSearch"/>
+    </view>
+
+    
+</view>
+<view class="hot_word">
+    <view bindtap="goSearch_hot" data-ID="机器学习" style="position:absolute; left: 250rpx; top: 250rpx; font-size: 60rpx;">机器学习</view>
+    <view bindtap="goSearch_hot" data-ID="区块链" style="position:relative; left: 430rpx; top: 350rpx; font-size: 55rpx; width: 180rpx;">区块链</view>
+    <view bindtap="goSearch_hot" data-ID="神经网络" style="position:relative; left: 380rpx; top: 0rpx; font-size: 45rpx; width: 180rpx;">神经网络</view>
+    <view bindtap="goSearch_hot" data-ID="物联网" style="position:relative; left: 270rpx; top: 350rpx; font-size: 40rpx; width: 120rpx;">物联网</view>
+    <view bindtap="goSearch_hot" data-ID="人机交互" style="position:relative; left: 480rpx; top: 00rpx; font-size: 38rpx; width: 160rpx;">人机交互</view>
+    <view bindtap="goSearch_hot" data-ID="Docker" style="position:relative; left: 150rpx; top: 180rpx; font-size: 35rpx; width: 120rpx;">Docker</view>
+    <view bindtap="goSearch_hot" data-ID="SpringBoot" style="position:relative; left: 100rpx; top: -80rpx; font-size: 33rpx; width: 200rpx;">Spring Boot</view>
+    <view bindtap="goSearch_hot" data-ID="大数据" style="position:relative; left: 580rpx; top: -50rpx; font-size: 30rpx; width: 90rpx;">大数据</view>
+</view>

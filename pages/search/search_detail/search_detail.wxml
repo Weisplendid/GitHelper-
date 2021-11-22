@@ -1,0 +1,21 @@
+<!--pages/search/search_detail/search_detail.wxml-->
+
+<import src="../../help/wxParse/wxParse.wxml"/> 
+
+<view>
+<!-- 点击复制 -->
+  <view class="bo">
+    <text bindtap="copyReadmeURL" class="yuanzhi" >复制原址链接</text>
+  </view>
+  
+  <!-- <view wx:for-items="{{file_path}}" wx:for-item="item" wx:key="key">
+    <view><text>{{item}}</text></view>
+  </view> -->
+</view>
+
+
+
+
+<view style="width: 720rpx;margin-left: 15rpx;font-size: 35rpx;">
+    <template is="wxParse" data="{{wxParseData:readme_text.nodes}}" />
+</view>

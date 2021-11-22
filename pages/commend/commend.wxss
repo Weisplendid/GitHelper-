@@ -1,0 +1,87 @@
+/* page/commend/commend.wxss */
+
+.title{
+    margin-top: 1cm;
+    text-align: center;
+    font-size:35px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #410a43, #751141, #a71a3d, #db2537);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: discoloration 7s infinite; 
+    animation: discoloration 7s infinite;
+}
+@keyframes discoloration {
+    15% {color: #db2537;}
+    35% {color: #D43A98;}
+    55% {color: #FFA799;}
+    70%{color:#633379;}
+}
+.menu{
+    margin:0vw 3vw 0vw 3vw;
+}
+
+.type-icon{
+    width: 280rpx;
+    height: 100rpx;
+}
+
+.item{
+    border: solid 1px #DCDCDC;
+    width:700rpx;
+    border-radius: 10rpx;
+    position:relative;
+    margin-top: 30rpx;
+}
+.item-title{
+    margin-top: 5rpx;
+    position: relative;
+    left: 10rpx;
+    color: rgb(35, 64, 179);
+    font-size: 35rpx;
+}
+.item-content{
+    margin: 10rpx;
+    position: relative;
+    left: 25rpx;
+    width: 88vw;
+    font-size: 12px;
+}
+.item-bottom{
+    position: relative;
+    display:flex;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.item-language{
+    border: solid 1px black;
+    width: fit-content;
+    border-radius: 20rpx;
+}
+.item-star{
+    padding-right: 30rpx;
+    color: rgb(87, 96, 106);
+}
+/* .refresh{
+ 
+    font-size:25px;
+   
+    font-weight: bold;
+    background: linear-gradient(to right, #1ae8c8, #4a8aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: discoloration 7s infinite; 
+    animation: discoloration 7s infinite;
+  
+}
+@keyframes discoloration {
+    1% {color: rgba(0, 0, 255, 0.11);}
+    50% {color: rgba(0, 0, 255, 0.616);}
+    65% {color: rgba(47, 183, 218, 0.76);}
+    80%{color: rgba(0, 128, 0, 0.568);}
+    100%{color: rgb(214, 115, 33);}
+} */

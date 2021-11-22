@@ -1,0 +1,97 @@
+/* page/search/search.wxss */
+/* 顶部标题 */
+#title{
+    text-align: center;
+
+}
+.tit{
+    margin-top: 1.3cm;
+  
+    font-size:85rpx;
+    font-weight: bold;
+    background: linear-gradient(to right, #1ae8c8, #4a8aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: discoloration 7s infinite; 
+    animation: discoloration 7s infinite;
+}
+.le{
+    margin-top: 1.3cm;
+   
+    font-size:62rpx;
+    font-weight: bold;
+    background: linear-gradient(to right, #1ae8c8, #4a8aff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: discoloration1 5s infinite; 
+    animation: discoloration1 5s infinite;
+}
+@keyframes discoloration {
+    1% {color: rgba(0, 0, 255, 0.11);}
+    50% {color: rgb(55, 55, 233);}
+    65% {color: rgba(47, 183, 218, 0.76);}
+    80%{color: rgba(0, 128, 0, 0.568);}
+   
+}
+
+@keyframes discoloration1 {
+    1%  {color: rgba(19, 139, 55, 0.041);}
+    50% {color: rgba(47, 183, 218, 0.76);}
+    65% {color: rgb(55, 55, 233);}
+    80%{color: rgba(0, 0, 255, 0.11);}
+}
+/* github和gitee图片 */
+#head{
+    display: flex;
+    margin: 0 25rpx 25rpx 50rpx;
+}
+#head_text{
+    font-size: 50rpx;
+    line-height: 100rpx;
+    letter-spacing: 2rpx;
+}
+.head_ico{
+    width:300rpx;
+    height: 100rpx;
+}
+
+/* 搜索栏 */
+#search{
+    width: 700rpx;
+    display: inline-flex;
+    margin: 25rpx;
+}
+#searchBar_ico{
+    height: 100rpx;
+    width: 100rpx;
+}
+#search-input{
+    width: 600rpx;
+    height: 100rpx; 
+    border: 1rpx solid lightgray;
+    border-radius: 5rpx 30rpx 30rpx 5rpx;
+}
+#search-button{
+    position: relative;
+    width: 100rpx;
+    height: 104rpx;
+    font-size: 40rpx;
+    border-radius: 0 30rpx 30rpx 0;
+    text-align: center;
+    line-height: 104rpx;
+    background: rgb(236, 236, 236);
+}
+.tapbtn1[plain]{
+    border:none;   
+    height: 100rpx;
+  }
+  
+  .hot_word{
+    position: relative;
+    padding: 0rpx;
+    margin: 0;
+    font-weight: 400;
+    
+}

@@ -1,0 +1,36 @@
+/* pages/search/search_detail/search_detail.wxss */
+@import "../../help/wxParse/wxParse.wxss";
+
+.yuanzhi{
+    margin-top: 1cm;
+   
+    font-size:41rpx;
+    font-weight: bold;
+    background: linear-gradient(to right, #8E0E00, #1F1C18);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: discoloration 5s infinite; 
+    animation: discoloration 5s infinite;
+
+}
+@keyframes discoloration {
+    1% {color: rgba(151, 62, 21, 0.712);}
+    50% {color: rgb(82, 14, 10);}
+    65% {color: rgba(68, 32, 11, 0.76);}
+    80%{color: rgba(104, 82, 10, 0.527);}
+   
+}
+.bo{
+    margin: 20rpx;
+    border: solid 3rpx #22a392b7;
+    width: 280rpx;
+    height: 80rpx;
+    float: right;
+    text-align: center;
+    line-height:  80rpx;
+    border-radius: 30rpx;
+    font-family:fantasy;
+    background: linear-gradient(to right, #00808e, #eceae7);
+    
+}
